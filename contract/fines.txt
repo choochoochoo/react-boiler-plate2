@@ -1,0 +1,8 @@
+violation
+
+"20-40"
+"40-60"
+"parking"
+
+GET
+fines/photo/213424234
