@@ -1,3 +1,6 @@
+GET
+/api/fines
+
 violation
 
 "20-40"
