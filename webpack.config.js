@@ -13,7 +13,22 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-            { test: /\.jsx$/, exclude: /node_modules/, loader: "babel-loader"},
+            { test: /\.jsx$/, exclude: /node_modules/, loader: "babel-loader" },
+            {
+                test: /\.css$/,
+                use: [
+                    require.resolve('style-loader'),
+                    {
+                        loader: require.resolve('css-loader'),
+                        options: {
+                            importLoaders: 1,
+                            modules: {
+                                localIdentName: "[name]__[local]___[hash:base64:5]"
+                            },
+                        },
+                    },
+                ]
+            }
         ]
     },
     plugins: [

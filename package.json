@@ -4,11 +4,13 @@
   "description": "b2b-fines",
   "main": "index.js",
   "dependencies": {
+    "css-loader": "^3.4.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-redux": "^7.1.3",
     "react-router-dom": "5.1.2",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "style-loader": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
