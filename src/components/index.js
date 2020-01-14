@@ -1,1 +1,2 @@
-export { App } from './app/index.jsx'
+export { Fines } from './fines/index.jsx'
+export { Vehicles } from './vehicles/index.jsx'

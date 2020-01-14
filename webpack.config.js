@@ -23,5 +23,10 @@ module.exports = {
         new webpack.ProvidePlugin({
             Promise: "imports?this=>global!exports?global.Promise!es6-promise",
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: {
+            index: '/',
+        },
+    },
 };
