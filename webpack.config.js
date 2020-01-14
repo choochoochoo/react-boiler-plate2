@@ -1,5 +1,4 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const webpack = require('webpack')
 const path = require('path')
 const postcssPresetEnv = require('postcss-preset-env')
 
@@ -46,9 +45,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: "src/index.html", to: "index.html" }
         ]),
-        new webpack.ProvidePlugin({
-            Promise: "imports?this=>global!exports?global.Promise!es6-promise",
-        })
+
     ],
     devServer: {
         historyApiFallback: {
