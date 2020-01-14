@@ -1,6 +1,6 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
-const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const webpack = require('webpack')
+const path = require('path')
 const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
@@ -15,6 +15,7 @@ module.exports = {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
             { test: /\.jsx$/, exclude: /node_modules/, loader: "babel-loader" },
+            { test: /\.svg$/, loader: 'svg-inline-loader' },
             {
                 test: /\.css$/,
                 use: [
@@ -32,7 +33,7 @@ module.exports = {
                         loader: 'postcss-loader', options: {
                             ident: 'postcss',
                             plugins: () => [
-                                postcssPresetEnv(/* pluginOptions */)
+                                postcssPresetEnv()
                             ]
                         }
                     }
