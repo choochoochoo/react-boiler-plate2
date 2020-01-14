@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "body": {
+    "quantity": 36,
+    "hasMore": true,
+    "totalAmount": 3300,
+    "checkingDate": "24.01.2019",
+    "checkingTime": "14:01",
+    "fines": [
+      {
+        "uin": "1121313",
+        "status": "1212123123",
+        "violationText": "Превышение от 20 до 40 км",
+        "violationType": "1212123123",
+        "violationAddress": "Москва кутузовский 32",
+        "actDate": "24.01.2019",
+        "actTime": "14:01",
+        "discountDate": "30.01.2019",
+        "regSign": "А123АА777",
+        "sts": "1212123123",
+        "amount": 250,
+        "hasPhoto": true
+      }
+    ]
+  }
+}

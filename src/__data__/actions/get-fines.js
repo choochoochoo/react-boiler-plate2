@@ -6,15 +6,15 @@ import {
     GET_FINES_FAILED,
     GET_FINES_STARTED,
 } from '../action-types'
-import { getMapiUrl } from '../../utils/url'
+import config from '../../../config.json'
 
-const URL = '/private/payments/debts/list.do'
+const URL = '/api/fines'
 
 export const getFinesPure = (param, dispatch) => {
     dispatch({ type: GET_FINES_STARTED })
 
     axios
-        .post(`${getMapiUrl()}${URL}`, {}, {
+        .get(`${config.host}${URL}`, {}, {
             withCredentials: true,
             headers: {
                 'Content-Type': 'application/json'
