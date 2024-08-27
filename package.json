@@ -34,7 +34,7 @@
     "redux-devtools": "^3.5.0",
     "style-loader": "^1.1.2",
     "svg-inline-loader": "^0.8.0",
-    "webpack": "3.2.0",
+    "webpack": "5.94.0",
     "webpack-dev-server": "2.5.1"
   },
   "scripts": {
